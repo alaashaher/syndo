@@ -1,0 +1,289 @@
+#recaptcha-container {
+  display: none;
+}
+
+@import 'react-image-gallery/styles/scss/image-gallery.scss';
+
+@import 'animate.css/animate.min.css';
+@import 'react-notifications-component/dist/theme.css';
+@import './config';
+@import './common';
+@import './modals';
+
+// html {
+//   scroll-behavior: smooth;
+//   color: $main-black-color;
+
+//   &[lang='ar'] {
+//     @include bodyFont-ar;
+
+//     button {
+//       @include bodyFont-ar;
+//     }
+//   }
+
+//   &[lang='en'] {
+//     @include bodyFont-ar;
+
+//     button {
+//       @include bodyFont-ar;
+//     }
+//   }
+
+// }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  background-color: #fff;
+  // @include bodyFont-ar;
+  @include custom-scrollbar;
+}
+
+.app {
+  min-height: 100vh;
+  height: 100%;
+  // background-color: #f5f5f5;
+  background-color: #fff;
+  // display: grid;
+  grid-template-rows: auto 1fr;
+
+  // &.app-ltr {
+  // 	@include bodyFont-en;
+  // }
+
+  // &.app-rtl {
+  //   @include bodyFont-ar;
+  // }
+
+  margin: 0;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // @import "./css/fontello.css";
+  // @import "./css/ionicons.css";
+}
+
+[contenteditable='true'] {
+  line-height: 1.8;
+  // display: grid;
+  // align-items: center;
+}
+
+.ec-brand-outer {
+  .slick-dots {
+    display: none !important;
+  }
+}
+
+.ec-sidebar-block-item {
+  display: flex;
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(99, 99, 99);
+
+    &.active {
+      background-color: rgb(99, 99, 99);
+    }
+  }
+}
+
+.ec-product-inner .ec-pro-image {
+  min-height: 250px;
+
+  .image {
+    img {
+      min-height: 250px;
+    }
+  }
+
+}
+
+.MuiBox-root {
+  @include custom-scrollbar-model
+}
+
+.footer-offer {
+  background: #a60303 !important;
+}
+
+.ec-pro-color li.active {
+  box-shadow: 0px 0px 5px 0px #ff4d4f !important;
+}
+
+// .single-pro-content .ec-pro-variation .ec-pro-variation-inner .ec-pro-variation-content li {
+//   width: fit-content !important;
+// }
+
+
+.deletereview {
+  width: 100px;
+  text-align: end;
+  display: grid;
+  align-items: center;
+}
+
+.single-pro-img {
+  width: 100%;
+}
+
+.image-gallery-swipe {
+  height: 400px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  height: 400px;
+  max-height: 100%;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 40px;
+}
+
+.ec-shop-rightside {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee !important;
+  margin-top: 10px;
+}
+
+.ec-del-option {
+  span {
+    display: grid;
+    grid-template-columns: 20px 90%;
+    grid-gap: 2px;
+  }
+
+}
+
+.ec-cart-form .ec-cart-select-inner {
+  border: none;
+}
+
+.payment-method-span {
+  display: grid;
+  grid-template-columns: 20px 90%;
+  grid-gap: 2px;
+}
+
+
+.payment-method {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(33, 32, 32);
+
+  &.active {
+    background-color: rgb(33, 32, 32);
+  }
+}
+
+.order-table {
+  display: none;
+
+  &.active {
+    display: inline-table;
+  }
+}
+
+.upload-files-wrapper {
+  .file-input-label {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dropzone-itself {
+    min-height: 132px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #eeeeee;
+    border-style: dashed;
+    color: #bdbdbd;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.24s ease-in-out;
+  }
+}
+
+.imgs-preview-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .img-preview {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.ec-opt-size.product-card-size {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.visable {
+  display: inline !important;
+}
+
+.promoCode-input {
+  border: 1px solid #656464;
+}
+
+.ec-del-option1 {
+  span {
+    display: grid;
+    grid-template-columns: 20px auto;
+  }
+
+  label {
+    margin-right: 5px;
+    margin-left: 5px;
+
+  }
+
+  .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.ec-checkout-del {
+  display: grid;
+  grid-gap: 14px;
+  margin-top: 16px;
+}
+
+.ec-sb-title {
+  margin-top: 27px;
+}

@@ -1,0 +1,268 @@
+{
+  "days": "عدد الايام {{n_of_days}}",
+  "main_app_bar_links": {
+    "home": "الرئيسية",
+    "occasions": "المناسبات",
+    "brands": "الماركات",
+    "designers": "المصممين",
+    "shops": "المتاجر",
+    "products": "المنتجات",
+    "category": "الفئات",
+    "colors": "الألوان",
+    "profile": "الملف الشخصي",
+    "setting": "معلومات الحساب",
+    "no_occasions": "لا توجد مناسبات"
+  },
+  "show_all": "عرض الكل",
+  "feild_must_have_value": " يجب ان يكون الحقل له قيمه",
+  "error_occered": "حدث خطأ اثناء الدخول",
+  "wrong_data_entry": "البيانات المدخلة غير صحيحة",
+  "opration_done_succfully": "تمت العملية بنجاح",
+  "product_remove_succfully": "تم حذف المنتج من المفضله",
+  "product_added_succfully": "تم أضافه المنتج في المفضله",
+  "error_happen": "حدث خطأ",
+  "Login": "تم تسجيل الدخول",
+  "Login_succfully": "تم تسجيل الدخول بنجاح",
+  "deleted_succfully": "تم الحذف",
+  "wrong_delete": "حدث خطأ أثناء الحذف",
+  "main_app_footer": {
+    "footer_title": "تصميم واجهات المستخدم",
+    "footer_desc": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.    ",
+    "footer_links_title": "تعرف علينا",
+    "footer_social_title": "اساليب الدفع",
+    "footer_social_title2": "تواصل معنا"
+  },
+  "page_title": {
+    "desginer_page": "عرض كل المصممين",
+    "occasion_page": "عرض كل المناسبات",
+    "shops_page": "عرض جميع المتاجر",
+    "category_page": "عرض جميع الفئات",
+    "product_page": "عرض جميع المنتجات"
+  },
+  "home_page": {
+    "catogry_section": {
+      "title": "استكشف الفئات",
+      "desc": "",
+      "showAll": "عرض منتجات الفئه",
+      "allProduct": " منتجات الفئه",
+      "no_category": "لا يوجد فئات"
+    },
+    "shop_section": {
+      "title": "تسوق حسب الماركة",
+      "desc": "",
+      "allProduct": " منتجات المتجر",
+      "no_stores": "لا توجد متاجر الآن"
+    },
+    "desginer_section": {
+      "title": "المصممين",
+      "no_desginer": "لا يوجد مصممين",
+      "desc": "",
+      "showAll": "عرض منتجات المصمم",
+      "allProduct": " منتجات المصمم"
+    },
+    "newformats_section": {
+      "title": "تنسيقات جديدة",
+      "desc": ""
+    },
+    "bestSellers_section": {
+      "title": "الأكثر مبيعا",
+      "desc": ""
+    },
+    "occasion_section": {
+      "title": "تسوق حسب المناسبة",
+      "occasion_section": "منتجات المناسبة",
+      "desc": "",
+      "allProduct": " منتجات المناسبة"
+    }
+  },
+  "login_page": {
+    "name": "تسجيل دخول",
+    "opation": {
+      "desc": "ليس لديك حساب؟",
+      "page_to": "انشاء حساب جديد"
+    },
+    "login_form": {
+      "email": "البريد الألكتروني",
+      "phone": "رقم الهـاتف",
+      "password": "الرمز السري",
+      "remember": "تذكرنى في المرة القادمة",
+      "btn": "تسجيل الدخول",
+      "allow_number_only": "لا يسمح سوي بأرقام فقط",
+      "forgetPassword": "هل نسيت الرمز السري؟",
+      "enter_name": "من فضلك ادخل اسمك",
+      "enter_phone": "من فضلك أدخل رقم الهاتف",
+      "enter_password": "من فضلك أدخل كلمة السر الخاصة بحسابك"
+    }
+  },
+  "forget_page": {
+    "name": "هل نسيت كلمة المرور",
+    "opation": {
+      "desc": "ادخل الايميل الخاص بك ليتم ارسال لك رمز",
+      "code": " ادخل الكود المرسل اليك"
+    },
+    "forget_form": {
+      "email": "البريد الألكتروني",
+      "btn": "متابعه",
+      "code": "الكود",
+      "password": "الرمز السري",
+      "password_confirmation": "تأكيد الرمز السري",
+      "must_enter_password": "من فضلك ادخل الرمز السري ",
+      "must_enter_password_more_than": "لا يسمح ب اقل من 6 ارقام",
+      "must_enter_password_confirmation": "من فضلك ادخل تأكيد الرمز السري",
+      "must_enter_password_matched": "كلمه السر غير متطابقه",
+      "must_enter_old_password": "من فضلك ادخل الرمز السري القديم "
+    }
+  },
+  "sign_page": {
+    "name": "انشاء حساب",
+    "opation": {
+      "desc": "لديك حساب بالفعل؟",
+      "page_to": "الدخول"
+    },
+    "sign_form": {
+      "name": "الاسم بالكامل",
+      "email": "البريد الألكتروني",
+      "phone": "رقم الهـاتف",
+      "password": "الرمز السري",
+      "birthday": "تاريخ الميلاد",
+      "male": "ذكر",
+      "female": "انثي",
+      "btn": "انشاء حساب",
+      "forgetPassword": "هل نسيت الرمز السري؟",
+      "edit_btn": "حفظ التغييرات",
+      "sign_out": "تسجيل الخروج",
+      "enter_email": " من فضلك قم بأدخال البريد الألكتروني",
+      "enter_valied_email": "من فضلك قم بأدخال بريد ألكتروني صحيح",
+      "enter_name": "من فضلك ادخل اسمك",
+      "enter_phone_number": "من فضلك قم بأدخال رقم الهاتف",
+      "enter_phone_number_valid": "لا يسمح الا بالارقــام",
+      "enter_phone_number_max_9_number": "لا يسمح ب اقل من 9 ارقام"
+    }
+  },
+  "settings_page": {
+    "menu": {
+      "settings": "الاعدادات",
+      "personal_info": "معلومات الحساب",
+      "my_order": "طلباتي",
+      "occasions": "المناسبات",
+      "address": "عناويني",
+      "wish_list": "المفضلة",
+      "wallet": "المحفظة",
+      "balance": "الرصيد",
+      "change_password": "تغيير كلمة السر",
+      "old_password": "كلمة السر القديمه",
+      "new_password": "كلمة السر الجديدة",
+      "confirm_new_password": "تأكيد كلمة السر",
+      "no_orders": " لا يوجد طلبات"
+    },
+    "sub_page": {
+      "change_Address": "تغيير عنوان الطلب",
+      "cancle_reson": "سبب الألغاء",
+      "reciver_data": "معلومات المستلم",
+      "enter_apartment": "من فضلك أدخل رقم الشقه",
+      "enter_building": "من فضلك ادخل رقم المبني",
+      "enter_street": "من فضلك أدخل الشارع",
+      "enter_city": "من فضلك ادخل المدينه",
+      "enter_area": "من فضلك أدخل المنطقه",
+      "enter_address": "من فضلك أدخل العنوان",
+      "enter_reciver": "من فضلك قم بأدخال اسم المستلم",
+      "noaddress": "لا يوجد عناوين",
+      "name": "الاسم",
+      "desc": "الوصف",
+      "date": "التاريخ",
+      "delivery": "سعر التوصيل",
+      "add_accasion": "إضافة مناسبة",
+      "add_addresses": "إضافة عنوان",
+      "no_occasions": "لا توجد مناسبات",
+      "city": "المدينه",
+      "address": "العنوان",
+      "enter_occasion_name": "من فضلك أدخل اسم المناسبة",
+      "enter_occasion_description": "من فضلك أدخل وصف المناسبة",
+      "area": "المنطقه",
+      "search": "أبحث",
+      "addressInput": "العنوان",
+      "street": "الشارع",
+      "apartment": "الشقه",
+      "building": "المنبي",
+      "total": "الأجمالي",
+      "discount": "كود الخصم",
+      "applydiscount": "تفعيل",
+      "tax": "الضريبه",
+      "sub": "المجموع",
+      "traking": "تتبع العملية",
+      "success": "تمت بنجاح",
+      "refuse": "العملية فشلت",
+      "Waiting": "قيد الأنتظار",
+      "discountVal": "الخصم",
+      "cancle": "العملية أنتهت",
+      "cancle_order": "الغاء",
+      "cancle_orders": "الغاء الطلب",
+      "traking_order": "تتبع العملية ",
+      "processing": "جاري معالجه طلبك",
+      "making": "جاري تحضير طلبك",
+      "onway": "فى الطريق اليك",
+      "processingInfo": "انت الان في مرحلة المعالجة",
+      "makingInfo": "يعمل المتجر علي تحضير طلبك",
+      "onwayInfo": "استعد لوصول المندوب اليك",
+      "add_address": "أضافه عنوان",
+      "edit_address": "تعديل عنوان",
+      "edit_accasion": "تعديل مناسبة",
+      "there_no_product": "لا توجد منتجات مفضله لديك"
+    }
+  },
+  "product_detailes": {
+    "sar": "ريال",
+    "price_include_tax": "السعر شامل الضريبه",
+    "add_to_card": "إضافة الى السلة",
+    "detailes": "التفاصيل",
+    "name": "أضافة منتج",
+    "desc": "اختار منتج يضاف علي منتجك",
+    "no_product": "لا يوجد منتجات",
+    "price": "السعر",
+    "quantity": "الكمية"
+  },
+  "order_page": {
+    "massage": {
+      "data_delivary": "تاريخ التسليم",
+      "done_succfully": "تم بنجاح",
+      "from": "من",
+      "to": "إلي",
+      "font_type": "نوع الخط",
+      "font": "الخط",
+      "message": "الرسالة",
+      "link": "الصق الرابط",
+      "continuation": "متابعة العملية",
+      "show_massage": "عرض الرسالة",
+      "update_massage": "تعديل الرسالة",
+      "update_Address": "تعديل العنوان",
+      "valid_link": "قم بأدخال رابط صحيح"
+    },
+    "payment": {
+      "password": "الرمز السري",
+      "expiredate": "تاريخ الانتهاء",
+      "number": "رقم البطاقه",
+      "reciver": "أسم المستلم",
+      "phone": "رقم الهـاتف",
+      "saved_address": "العناوين المحفوظه",
+      "choose_address": "حدد عنوانك"
+    },
+    "order_detailes": {
+      "card_product": "منتجات السلة ",
+      "delvery_time": "وقت التوصيل",
+      "message": "الرسالة",
+      "add_sms": "اضافة رسالة نصية",
+      "please_choose_address": "من فضلك أختر العنوان",
+      "address": "العنوان",
+      "add_address": "اضافة وتعديل العنوان",
+      "payment": "الدفع",
+      "last_step": "الخطوه الأخيرة",
+      "today": "اليوم",
+      "tomorrow": "غدا",
+      "chosse_date": "اختيار تاريخ",
+      "choose_delviry_date": "اختار تاريخ التوصيل",
+      "please_choose_delviry_date": "من فضلك اختر التاريخ ",
+      "please_choose_delviry_time": "من فضلك اختر الوقت",
+      "choose_delviry_time": "وقت التوصيل"
+    }
+  }
+}
