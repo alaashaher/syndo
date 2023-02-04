@@ -1,0 +1,110 @@
+@import '../../../../scss/config';
+
+.hero-section {
+    @include mediaLg {
+        height: calc(100vh - #{$headerLg-height});
+    }
+
+    @include mediaXlg {
+        height: calc(100vh - #{$headerXlg-height});
+    }
+
+    @include mediaXXlg {
+        height: calc(100vh - #{$headerXXlg-height});
+    }
+
+    display: grid;
+    align-content: center;
+
+    .main-wrapper {
+        position: relative;
+        z-index: $app-header-z-index;
+        margin: auto;
+        display: grid;
+
+        @include mediaLg {
+            grid-template-columns: 55% 45%;
+        }
+
+        .hero-text {
+            display: grid;
+            align-content: center;
+            order: 1;
+
+            @include mediaLg {
+                order: 0;
+            }
+
+            .h1-text {
+                font-weight: bold;
+                line-height: 1.3;
+                color: $main-app-color;
+
+                &:first-of-type {
+                    font-size: 32px;
+
+                    @include mediaLg {
+                        font-size: 48px;
+                    }
+
+                    @include mediaXlg {
+                        font-size: 52px;
+                    }
+
+                    @include mediaXXlg {
+                        font-size: 72px;
+                    }
+                }
+
+                &:last-of-type {
+                    font-weight: normal;
+                    font-size: 32px;
+                    color: #fff;
+
+                    @include mediaLg {
+                        font-size: 38px;
+                    }
+
+                    @include mediaXlg {
+                        font-size: 42px;
+                    }
+
+                    @include mediaXXlg {
+                        font-size: 62px;
+                    }
+                }
+            }
+
+            .p-text-wrap {
+                margin-top: 12px;
+                color: #fff;
+
+                @include mediaLg {
+                    margin-top: 32px;
+                }
+
+                .p-text {
+                    line-height: 1.7;
+
+                    @include mediaLg {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .hero-img {
+            text-align: end;
+
+            img {
+                max-width: 100%;
+                max-height: 80vh;
+                z-index: 2;
+
+                @include mediaXXlg {
+                    max-height: 82vh;
+                }
+            }
+        }
+    }
+}

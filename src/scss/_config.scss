@@ -1,20 +1,23 @@
-$main-black-color: #000000;
-$main-app-color: #643a71;
-$secondary-app-color: #858585;
+$main-black-color: #595f6f;
+$main-app-color: #00ACB1;
+$secondary-app-color: #ecb11c;
 
-$headerMd-height: auto;
-$headerLg-height: auto;
-$headerXlg-height: auto;
-$headerXXlg-height: auto;
+$headerMd-height: 62px;
+$headerLg-height: 72px;
+$headerXlg-height: 82px;
+$headerXXlg-height: 92px;
 
 @mixin mainAppBarHeight {
   height: $headerMd-height;
+
   @include mediaLg {
     height: $headerLg-height;
   }
+
   @include mediaXlg {
     height: $headerXlg-height;
   }
+
   @include mediaXXlg {
     height: $headerXXlg-height;
   }
@@ -22,18 +25,21 @@ $headerXXlg-height: auto;
 
 @mixin minusMainAppBarHeight {
   top: -$headerMd-height;
+
   @include mediaLg {
     top: -$headerLg-height;
   }
+
   @include mediaXlg {
     top: -$headerXlg-height;
   }
+
   @include mediaXXlg() {
     top: -$headerXXlg-height;
   }
 }
 
-$app-header-z-index: 99;
+$app-header-z-index: 99999;
 $backdrop-z-index: 100;
 $dropDownMenu-z-index: 200;
 $focusedTextArea-z-index: 300;
@@ -43,6 +49,7 @@ $postModalWrapper-z-index: 499;
 
 @mixin customPaper {
   border-radius: 4px;
+
   .myPaperHeader {
     padding: 14px 16px;
     display: grid;
@@ -60,6 +67,7 @@ $postModalWrapper-z-index: 499;
       color: $black-primary-color;
     }
   }
+
   &.light {
     .myPaperHeader {
       background-color: $white-primary-color;
@@ -102,64 +110,6 @@ ul {
   list-style-type: none;
 }
 
-// @font-face {
-//   font-family: 'Cairo-Light';
-//   src: url(../assets/fonts/Cairo-Light.woff) format('woff');
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Cairo-SemiBold';
-//   src: url(../assets/fonts/Cairo-SemiBold.woff) format('woff');
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'Cairo-Bold';
-//   src: url(../assets/fonts/Cairo-Bold.woff) format('woff');
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Cairo-Regular';
-//   src: url(../assets/fonts/Cairo-Regular.woff) format('woff');
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'Dubai-Regular';
-//   src: url(../assets/fonts/Dubai-Regular.woff) format('woff');
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'ArefRuqaa-Regular';
-//   src: url(../assets/fonts/ArefRuqaa-Regular.woff) format('woff');
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'KhebratMusamimRegular';
-//   src: url(../assets/fonts/KhebratMusamimRegular.woff) format('woff');
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'ArslanWessamB';
-//   src: url(../assets/fonts/ArslanWessamB.woff) format('woff');
-//   font-style: normal;
-// }
-
-// @mixin bodyFont-ar {
-//   font-family: 'Cairo-Regular';
-// }
-// @mixin bodyFont-en {
-// 	font-family: "AndikaNewBasic-Regular" !important;  ArslanWessamB
-// }
-
-// @mixin headingFont-ar {
-// 	font-family: "Janna-LT-Bold";
-// }
-// @mixin headingFont-en {
-// 	font-family: "AndikaNewBasic-Bold";
-// }
-
 @mixin custom-scrollbar {
   &::-webkit-scrollbar {
     width: 10px;
@@ -180,28 +130,20 @@ ul {
       background: #aaa;
     }
   }
+
+  // &:hover {
+  // 	&::-webkit-scrollbar-track {
+  // 		box-shadow: inset 0 0 1px grey;
+  // 		background-color: #f7f8fa;
+  // 	}
+
+  // 	&::-webkit-scrollbar-thumb {
+  // 		background: #ababab;
+  // 		background: red;
+  // 	}
+  // }
 }
-@mixin custom-scrollbar-model {
-  &::-webkit-scrollbar {
-    width: 10px;
-    height: 8px;
-  }
 
-  &::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #d5d5d500;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #5f8b9e00;
-    background-color: #b5b5b500;
-    border-radius: 10px;
-
-    &:hover {
-      background: #aaa;
-    }
-  }
-}
 // custom break points
 @mixin mediaXsm {
   @media only screen and (min-width: 320px) {
@@ -222,7 +164,7 @@ ul {
 }
 
 @mixin mediaMd {
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 768px) {
     @content;
   }
 }
@@ -240,6 +182,7 @@ ul {
 }
 
 @mixin mediaXlg {
+
   // @media only screen and (min-width: 1200px) {
   @media only screen and (min-width: 1366px) {
     @content;
@@ -251,6 +194,7 @@ ul {
     @content;
   }
 }
+
 @mixin mediaXXXlg {
   @media only screen and (min-width: 1600px) {
     @content;
@@ -291,6 +235,7 @@ ul {
     // max-width: 1340px;
     max-width: 1280px;
   }
+
   @include mediaXXXlg {
     max-width: 1540px;
     // max-width: 1280px;
@@ -301,52 +246,54 @@ ul {
   animation: topBottomAnimation 3s linear infinite;
 
   @keyframes topBottomAnimation {
+
     0%,
     100% {
       transform: translateY(0);
     }
+
     25% {
       transform: translateY(6px);
     }
+
     30% {
       transform: translateY(6px);
     }
+
     75% {
       transform: translateY(-6px);
     }
+
     80% {
       transform: translateY(-6px);
     }
   }
 }
+
 @mixin bounce_animation {
   animation: bounce_me 3s linear infinite;
 
   @keyframes bounce_me {
+
     0%,
     100% {
       transform: translateY(0);
     }
+
     25% {
       transform: translateY(3px);
     }
+
     32% {
       transform: translateY(3px);
     }
+
     75% {
       transform: translateY(-3px);
     }
+
     82% {
       transform: translateY(-3px);
     }
-  }
-}
-
-// page shared styles
-.myPage {
-  min-height: 100vh;
-  padding-top: $headerMd-height;
-  @include mediaLg {
-    padding-top: $headerLg-height;
   }
 }
