@@ -16,6 +16,9 @@ const HeroSection = () => {
             <div className="p-text-wrap">
               <p className="p-text">{t('home_page.hero_section.desc')}</p>
             </div>
+            <div className="hero-btn">
+              <a>{t('home_page.hero_section.Get_Started')}</a>
+            </div>
           </div>
 
           <div className="hero-img">

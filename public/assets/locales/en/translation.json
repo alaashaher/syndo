@@ -18,7 +18,14 @@
     "hero_section": {
       "title": "by the crowd for the crowd",
       "sub_title": "The Leading Digital Donations Platform in Egypt",
-      "desc": "The Leading Digital Donations Platform in Egypt"
+      "desc": "The Leading Digital Donations Platform in Egypt",
+      "Get_Started": "Get Started"
     }
+  },
+  "featured_section": {
+    "title": "Featured by",
+    "create": "Let’s co-create!",
+    "create_desc": "Sign up now and make your first donation",
+    "craete_btn": "Sign up"
   }
 }
