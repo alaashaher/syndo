@@ -11,27 +11,14 @@
 @import './common';
 @import './modals';
 
-// html {
-//   scroll-behavior: smooth;
-//   color: $main-black-color;
+html {
+  scroll-behavior: smooth;
+  color: $main-black-color;
 
-//   &[lang='ar'] {
-//     @include bodyFont-ar;
-
-//     button {
-//       @include bodyFont-ar;
-//     }
-//   }
-
-//   &[lang='en'] {
-//     @include bodyFont-ar;
-
-//     button {
-//       @include bodyFont-ar;
-//     }
-//   }
-
-// }
+  &[lang='ar'] {
+    direction: rtl
+  }
+}
 
 body {
   margin: 0;
@@ -50,13 +37,11 @@ body {
   // display: grid;
   grid-template-rows: auto 1fr;
 
-  // &.app-ltr {
-  // 	@include bodyFont-en;
-  // }
 
-  // &.app-rtl {
-  //   @include bodyFont-ar;
-  // }
+
+  &.app-rtl {
+    // direction: rtl;
+  }
 
   margin: 0;
   padding: 0 !important;
