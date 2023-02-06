@@ -42,6 +42,10 @@ const MainAppFooter = () => {
               <li>
                 <RouterLink to={routerLinks.homePage}>
                   <span>{t('main_app_bar_links.faq')}</span>
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink to={routerLinks.homePage}>
                   <span>{t('main_app_bar_links.support')}</span>
                 </RouterLink>
               </li>

@@ -20,10 +20,19 @@
       "Get_Started": "Get Started"
     }
   },
+  "explore_section": {
+    "title": "Explore donation campaigns"
+  },
   "featured_section": {
     "title": "Featured by",
     "create": "Let’s co-create!",
     "create_desc": "Sign up now and make your first donation",
     "craete_btn": "Sign up"
+  },
+  "main_app_footer": {
+    "footer_desc": "by the crowd for the crowd",
+    "footer_links_title": "Products",
+    "footer_social_title": "Company",
+    "footer_resources_title": "Resources"
   }
 }

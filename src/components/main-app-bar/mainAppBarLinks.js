@@ -22,7 +22,7 @@ const mainAppBarLinks = (t) => [{
     link: routerLinks.homePage
   },
   {
-    id: 4,
+    id: 5,
     name: t('main_app_bar_links.Login'),
     link: routerLinks.homePage
   }
