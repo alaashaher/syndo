@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
+import LanguageButton from '../../common/language-button/LanguageButton';
 import routerLinks from '../app/routerLinks';
 
 import './MainAppFooter.scss';
@@ -42,10 +43,19 @@ const MainAppFooter = () => {
                 <RouterLink to={routerLinks.homePage}>
                   <span>{t('main_app_bar_links.faq')}</span>
                   <span>{t('main_app_bar_links.support')}</span>
-
                 </RouterLink>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="footer-down">
+          <div className="footer-text">
+            <p>© syndo 2021. All rights reserved</p>
+            <a href="">Privacy Policy</a>
+            <a href="">Legal Terms</a>
+          </div>
+          <div className="lng-div">
+            <LanguageButton />
           </div>
         </div>
       </div>
