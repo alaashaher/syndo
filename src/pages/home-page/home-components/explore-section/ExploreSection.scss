@@ -38,6 +38,7 @@
 
         .explore-card {
             border-radius: 6px;
+
             .header {
                 width: 100%;
                 height: 230px;
@@ -47,29 +48,87 @@
                 align-items: end;
                 padding: 0px 20px;
                 padding-bottom: 20px;
-                border-top-right-radius:6px;
-                border-top-left-radius:6px;
+                border-top-right-radius: 6px;
+                border-top-left-radius: 6px;
             }
+
             .cart-data {
                 padding: 20px;
                 background-color: #fff;
-                border-bottom-right-radius:6px;
-                border-bottom-left-radius:6px;
+                border-bottom-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+
                 h1 {
                     font-weight: bold;
                 }
+
                 p {
                     margin: 20px 0px;
                     color: #656F77;
                 }
+
                 .tags {
                     display: flex;
                     gap: 10px;
+
                     div {
                         padding: 5px;
                         border-radius: 6px;
                         color: $main_app_color;
                         background-color: #00ACB129;
+                    }
+                }
+
+                .complate-data {
+                    margin: 20px 0px;
+
+                    .number {
+                        color: $main_app_color;
+                    }
+
+                    .progress {
+                        div {
+                            div {
+                                div {
+                                    background-color: $main_app_color !important;
+
+                                    span {
+                                        display: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .compare-div {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+
+                        .total {
+                            text-align: end;
+                        }
+                    }
+
+                }
+
+                .donate-btn {
+                    background-color: $main_app_color;
+                    color: #fff;
+                    padding: 20px 50px;
+                    border-radius: 6px;
+                }
+
+                .card-footer {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+
+                    p {
+                        color: #656F77;
+                    }
+
+                    h3 {
+                        color: #000000;
                     }
                 }
             }

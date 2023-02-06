@@ -6,6 +6,7 @@ import EgyptianFoodBank from '../../../../assets/imgs/explore-section/Egyptian-F
 import EgyptianFoodBankLogo from '../../../../assets/imgs/explore-section/Egyptian-Food-Bank-logo.png';
 
 import './ExploreSection.scss';
+import ProgressBar from '@ramonak/react-progress-bar';
 
 const ExploreSection = () => {
   const { t, i18n } = useTranslation();
@@ -37,6 +38,31 @@ const ExploreSection = () => {
                 <div>LABEL 1</div>
                 <div>LABEL 2</div>
                 <div>LABEL 3</div>
+              </div>
+              <div className="complate-data">
+                <div className="number">60%</div>
+                <div className="progress">
+                  <ProgressBar completed={60} />
+                </div>
+                <div className="compare-div">
+                  <div className="number">600,000 EGP</div>
+                  <div className="total">1,000,000,000 EGP</div>
+                </div>
+              </div>
+              <div className="card-footer">
+                <div className="">
+                  <p>Label</p>
+                  <h3>12%</h3>
+                </div>
+                <div className="">
+                  <p>Label</p>
+                  <h3>6 months</h3>
+                </div>
+                <div className="">
+                  <a href="http://" className="donate-btn">
+                    Donate
+                  </a>
+                </div>
               </div>
             </div>
           </div>
