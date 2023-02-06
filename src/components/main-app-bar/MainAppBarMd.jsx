@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import LanguageButton from '../../common/language-button/LanguageButton';
 import Logo from '../../common/logo/Logo';
 import mainAppBarLinks from './mainAppBarLinks';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import './MainAppBarMd.scss';
 
 const MainAppBarMd = ({ className }) => {
@@ -75,7 +75,7 @@ const MainAppBarMd = ({ className }) => {
               edge="start"
               // className={clsx(classes.menuButton, open && classes.hide)}
             >
-              <MenuIcon />
+              {/* <MenuIcon /> */}
             </IconButton>
             <LanguageButton />
           </div>

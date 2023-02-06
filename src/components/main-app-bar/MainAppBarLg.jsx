@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
-import LanguageButton from '../../common/language-button/LanguageButton';
 import Logo from '../../common/logo/Logo';
 import mainAppBarLinks from './mainAppBarLinks';
 import './MainAppBarLg.scss';
@@ -30,17 +29,17 @@ const MainAppBarLg = ({ className }) => {
                   <span>{name}</span>
                   <div className="dropdown-content">
                     <ul>
-                    {subitems.map((item) => {
-                      return (
-                        <li key={item.id}>
-                          <NavLink activeClassName="active-link" to={item.link} exact>
-                            {item.name}
-                            <div className="active-img-wrap"></div>
-                          </NavLink>
-                        </li>
-                      );
-                    })}
-                     </ul>
+                      {subitems.map((item) => {
+                        return (
+                          <li key={item.id}>
+                            <NavLink activeClassName="active-link" to={item.link} exact>
+                              {item.name}
+                              <div className="active-img-wrap"></div>
+                            </NavLink>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -57,7 +56,7 @@ const MainAppBarLg = ({ className }) => {
           <Logo className="main-app-bar-logo" />
           <div className="nav-lang-wrapper">
             {renderNavLinks()}
-            <LanguageButton />
+            <a className='sign-up-btn'>{t('main_app_bar_links.sign_up')}</a>
           </div>
         </div>
       </div>

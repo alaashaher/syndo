@@ -3,10 +3,13 @@
   "main_app_bar_links": {
     "home": "Home",
     "about": "About us",
-    "gallery": "Gallery",
-    "contact": "Contact us",
+    "Campaigns": "Campaigns",
+    "Products": "Products",
+    "About": "About",
+    "Login": "Login",
     "support": "Support",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "sign_up": "Sign Up"
   },
 
   "home_page": {

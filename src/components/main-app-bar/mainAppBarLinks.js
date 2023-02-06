@@ -1,35 +1,29 @@
 import routerLinks from '../app/routerLinks';
 
-const mainAppBarLinks = (t) => [
-  {
+const mainAppBarLinks = (t) => [{
     id: 1,
     name: t('main_app_bar_links.home'),
     link: routerLinks.homePage
   },
   {
     id: 2,
-    name: t('main_app_bar_links.about'),
+    name: t('main_app_bar_links.Campaigns'),
     link: routerLinks.homePage
   },
-  // {
-  //   id: 3,
-  //   name: t('services_section.main_title'),
-  //   link: null,
-  //   subitems: [
-  //     {
-  //       id: 5,
-  //       name: t('services_section.webServicePage'),
-  //       link: routerLinks.webServicePage
-  //     }, {
-  //       id: 6,
-  //       name: t('services_section.mobileServicePage'),
-  //       link: routerLinks.mobileServicePage
-  //     }
-  //   ]
-  // },
+  {
+    id: 3,
+    name: t('main_app_bar_links.Products'),
+    link: routerLinks.homePage,
+
+  },
   {
     id: 4,
-    name: t('main_app_bar_links.contact'),
+    name: t('main_app_bar_links.About'),
+    link: routerLinks.homePage
+  },
+  {
+    id: 4,
+    name: t('main_app_bar_links.Login'),
     link: routerLinks.homePage
   }
 ];

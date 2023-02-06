@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import MianAppBar from '../main-app-bar/MianAppBar';
 import MainAppFooter from '../main-app-footer/MainAppFooter';
 
 const AppLayout = ({ children }) => {
@@ -7,7 +8,7 @@ const AppLayout = ({ children }) => {
 
   return (
     <div className={`app-layout app-${i18n.dir()}`}>
-      {/* <MianAppBar /> */}
+      <MianAppBar />
       {children}
       <MainAppFooter />
     </div>
