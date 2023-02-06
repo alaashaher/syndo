@@ -2,16 +2,11 @@
   "days": "عدد الايام {{n_of_days}}",
   "main_app_bar_links": {
     "home": "Home",
-    "occasions": "Occasions",
-    "brands": "Brands",
-    "designers": "Designers",
-    "shops": "Shops",
-    "products": "Products",
-    "category": "Categories",
-    "colors": "Colors",
-    "profile": "Profile",
-    "setting": "Profile Setting",
-    "no_occasions": "No Occasions"
+    "about": "About us",
+    "gallery": "Gallery",
+    "contact": "Contact us",
+    "support": "Support",
+    "faq": "FAQ"
   },
 
   "home_page": {

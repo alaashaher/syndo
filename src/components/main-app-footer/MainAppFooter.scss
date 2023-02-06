@@ -1,0 +1,97 @@
+@import '../../scss/config';
+
+.main-app-footer {
+  display: grid;
+  padding: 32px 0;
+
+  .footer-content-wrap {
+    display: grid;
+    grid-gap: 12px;
+
+    @include mediaLg {
+      grid-gap: 32px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-shared {
+      display: grid;
+      align-content: start;
+
+      .footer-logo {
+        img {
+          height: 54px;
+
+          @include mediaLg {
+            height: 62px;
+          }
+        }
+      }
+
+      .wrapper-title {
+        color: #fff;
+        font-size: 20px;
+        margin: 18px 0;
+
+        @include mediaLg {
+          margin: 22px 0;
+        }
+      }
+
+      &.footer-social,
+      &.footer-links {
+        @include mediaLg {
+          justify-content: center;
+        }
+      }
+    }
+
+    .footer-about {
+      .footer-desc {
+        color: #969ca7;
+        line-height: 1.8;
+      }
+
+      .social-links {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: start;
+        grid-gap: 8px;
+        margin: 18px 0;
+
+        img {
+          width: 20px;
+        }
+
+        @include mediaLg {
+          margin: 32px 0;
+        }
+      }
+    }
+
+    .footer-links {
+      .nav-links-ul {
+        display: grid;
+        grid-gap: 18px;
+
+        li {
+          color: #fff;
+        }
+
+        a {
+          color: #fff;
+
+          &:hover {
+            color: $main-app-color;
+          }
+        }
+      }
+    }
+
+    .footer-social .social-emails,
+    .footer-social .social-emails-wrap {
+      color: #fff;
+      display: grid;
+      grid-gap: 18px;
+    }
+  }
+}
