@@ -50,6 +50,15 @@
                 padding-bottom: 20px;
                 border-top-right-radius: 6px;
                 border-top-left-radius: 6px;
+
+                .cyrcle-bar {
+                    text-align: end;
+
+                    svg {
+                        width: 50px;
+
+                    }
+                }
             }
 
             .cart-data {
@@ -76,6 +85,24 @@
                         border-radius: 6px;
                         color: $main_app_color;
                         background-color: #00ACB129;
+                    }
+                }
+
+                .persons {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                    .users {
+                        color: #656F77;
+
+                        strong {
+                            color: #000;
+                        }
                     }
                 }
 
