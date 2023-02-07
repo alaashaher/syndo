@@ -1,0 +1,56 @@
+@import '../../../../scss/config';
+
+.doers-section {
+    .explore-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h1 {
+            color: #fff;
+        }
+
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .doers-card {
+        border: 1px solid #656F77;
+        border-radius: 8px;
+        padding: 30px;
+
+        .body {
+            color: #656F77;
+            margin-top: 20px;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+
+            .image-div {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .qoute-img {
+                text-align: end;
+                align-items: center;
+                display: grid;
+                justify-content: end;
+            }
+
+            .name {
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .company {
+                color: #ACB8C2;
+            }
+        }
+    }
+}
