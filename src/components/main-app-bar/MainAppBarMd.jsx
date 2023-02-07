@@ -77,7 +77,6 @@ const MainAppBarMd = ({ className }) => {
             >
               <MenuIcon />
             </IconButton>
-            <LanguageButton />
           </div>
 
           <Logo className="main-app-bar-logo" />

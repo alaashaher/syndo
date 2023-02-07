@@ -1,0 +1,146 @@
+@import '../../scss/config';
+
+.donation-page {
+    .donation-bg {
+        // background-image: url("../../assets/imgs/explore-section/informazione_foto.png");
+        background: linear-gradient(0deg, rgba(18, 18, 18, 0.522), rgba(12, 12, 12, 0.516)), url("../../assets/imgs/explore-section/informazione_foto.png");
+
+        height: 200px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .success-page {
+        padding: 50px;
+
+        .img {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+        }
+
+        .text {
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+        }
+
+        .desc {
+            color: #fff;
+            text-align: center;
+            width: 70%;
+            font-size: 36px;
+            margin: 40px auto;
+        }
+
+        .colse-div {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+
+            .close {
+                background-color: $main-app-color;
+                color: #fff;
+                padding: 10px 25px;
+                margin: auto;
+                border-radius: 3px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .donation-title {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .donation-form {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-gap: 40px;
+
+        padding: 100px 0px;
+
+        .tabs {
+            gap: 39px;
+            display: grid;
+
+            .first {
+                border-bottom: 1px solid #C4C4C4;
+                padding-bottom: 30px;
+            }
+
+            .tab-div {
+                display: grid;
+                justify-content: center;
+
+                font-size: 25px;
+                font-weight: 700;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    margin: auto;
+                    width: 60px;
+                }
+
+                color: #fff;
+
+                &.active {
+                    color: $main_app_color;
+                }
+            }
+
+        }
+
+        .user-form {
+            .form-field-wrapper {
+                div {
+                    color: $main-app-color;
+                }
+            }
+            .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                border-bottom: 1px solid $main-app-color ;
+            }
+            .field-label {
+                color: #fff;
+            }
+
+            .btns {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+
+                .next {
+                    padding: 10px 30px;
+                    background-color: $main-app-color;
+                    color: #fff;
+                    border-radius: 3px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .close {
+                    color: #fff;
+                    background-color: transparent;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
