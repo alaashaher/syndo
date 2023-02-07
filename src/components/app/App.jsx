@@ -8,22 +8,16 @@ import theme from '../../theme';
 import { useTranslation } from 'react-i18next';
 import Loading from '../../common/loading/Loading';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import axios from 'axios';
 
 import Routess from './Routess';
 import '../../i18n';
 import AppLayout from './Layout';
 
-import urls from '../../urls';
-
-
-axios.defaults.baseURL = urls.baseUrl;
 
 function App() {
   const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
   const { i18n } = useTranslation();
-  
 
   return (
     <>

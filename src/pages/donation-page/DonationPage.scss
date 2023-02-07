@@ -104,14 +104,27 @@
         }
 
         .user-form {
+            .contact-form {
+                .inputs {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                border-color: #c4c4c400;
+            }
+
             .form-field-wrapper {
                 div {
                     color: $main-app-color;
                 }
             }
+
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-                border-bottom: 1px solid $main-app-color ;
+                border-bottom: 1px solid $main-app-color;
             }
+
             .field-label {
                 color: #fff;
             }
@@ -120,6 +133,7 @@
                 display: flex;
                 gap: 20px;
                 justify-content: center;
+                margin-top: 50px;
 
                 .next {
                     padding: 10px 30px;

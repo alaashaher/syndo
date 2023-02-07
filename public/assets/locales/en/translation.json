@@ -37,5 +37,18 @@
     "footer_links_title": "Products",
     "footer_social_title": "Company",
     "footer_resources_title": "Resources"
+  },
+  "name": {
+    "label": "name",
+    "errors": {
+      "required": "name required"
+    }
+  },
+  "send_btn": {
+    "title": "next",
+    "loading": "loading"
+  },
+  "date": {
+    "label": "date"
   }
 }

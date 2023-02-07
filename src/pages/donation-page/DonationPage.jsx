@@ -26,10 +26,7 @@ const DonationPage = () => {
           </div>
           <div className="user-form">
             <UserForm />
-            <div className="btns">
-              <button className="close">close</button>
-              <button className="next">Next</button>
-            </div>
+          
           </div>
         </div>
       </div>
