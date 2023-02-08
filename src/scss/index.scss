@@ -57,3 +57,8 @@ body {
   // display: grid;
   // align-items: center;
 }
+
+:where(.css-dev-only-do-not-override-j0nf2s).ant-input {
+  background-color: #0000;
+  color: $main-app-color;
+}

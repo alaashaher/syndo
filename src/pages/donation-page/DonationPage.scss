@@ -108,6 +108,23 @@
                 .inputs {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    gap: 30px;
+
+                    :where(.css-dev-only-do-not-override-j0nf2s).ant-input-lg {
+                        border-radius: 0px;
+                        border: 0px;
+                        border-bottom: 1px solid $main-app-color;
+                    }
+
+                    :where(.css-dev-only-do-not-override-j0nf2s).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                        background-color: #fff0;
+                    }
+
+                    .ant-form-item-label {
+                        label {
+                            color: #fff;
+                        }
+                    }
                 }
             }
 
@@ -133,10 +150,10 @@
                 display: flex;
                 gap: 20px;
                 justify-content: center;
-                margin-top: 50px;
+                margin-top: 150px;
 
                 .next {
-                    padding: 10px 30px;
+                    padding: 0px 30px;
                     background-color: $main-app-color;
                     color: #fff;
                     border-radius: 3px;
