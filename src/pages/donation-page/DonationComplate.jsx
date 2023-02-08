@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import success from '../../assets/imgs/donation/success.png';
+import routerLinks from '../../components/app/routerLinks';
 
 import './DonationPage.scss';
 const DonationComplate = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="donation-page">
       <div className="donation-bg"></div>
@@ -16,7 +20,7 @@ const DonationComplate = () => {
           Your donation of 200 EGP for Resala Campaign is made successfully.
         </div>
         <div className='colse-div'>
-          <a href="" className="close">
+          <a  className="close" onClick={()=> navigate(routerLinks.homePage)}>
             Close
           </a>
         </div>

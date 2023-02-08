@@ -10,14 +10,22 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import './DonationPage.scss';
 import AntdRadioGroup from '../../common/antd-form-components/AntdRadioGroup';
+import { useNavigate } from 'react-router-dom';
+import routerLinks from '../../components/app/routerLinks';
 
-const UserForm = ({ setform }) => {
+const Payment = ({ setform }) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const CONTACT_FORM_SCHEMA = Yup.object().shape({
-    name: Yup.string().required(t(`name.errors.required`)),
-    Nationality: Yup.string().required(t(` Nationality required`)),
-    Date: Yup.string().required(t(`Date required`))
+    CardNumber: Yup.string().required(t(`Card Number is required`)),
+    CardholderName: Yup.string().required(
+      t(`Card holder Name is required`)
+    ),
+    cvv: Yup.string()
+      .max(3, 'invalid value (should be 3 digits only)')
+      .min(3, 'invalid value (should be 3 digits only)')
+      .required(t(`Card holder Name is required`))
   });
 
   const {
@@ -38,7 +46,7 @@ const UserForm = ({ setform }) => {
 
   const [form] = Form.useForm();
   const onSubmit = async (data) => {
-    setform(2);
+    navigate(routerLinks.donationSuccess);
   };
 
   return (
@@ -46,61 +54,46 @@ const UserForm = ({ setform }) => {
       <div className="inputs">
         <div className="form-field-wrapper">
           <AntdTextField
-            name="name"
+            name="CardholderName"
             type="text"
-            placeholder={t('name.label')}
-            label={t('name.label')}
-            errorMsg={errors?.name?.message}
-            validateStatus={errors?.name ? 'error' : ''}
+            placeholder={t('Cardholder Name*')}
+            label={t('Cardholder Name*')}
+            errorMsg={errors?.CardholderName?.message}
+            validateStatus={errors?.CardholderName ? 'error' : ''}
             control={control}
           />
         </div>
         <div className="form-field-wrapper">
           <AntdTextField
-            name="Date"
-            type="date"
-            label={t('Date of Birth*')}
-            errorMsg={errors?.Date?.message}
-            validateStatus={errors?.Date ? 'error' : ''}
+            name="CardNumber"
+            type="number"
+            label={t('Card Number *')}
+            errorMsg={errors?.CardNumber?.message}
+            validateStatus={errors?.CardNumber ? 'error' : ''}
             control={control}
           />
         </div>
         <div className="form-field-wrapper">
-          <AntdSelectOption
-            name="Nationality"
-            errorMsg={errors?.Nationality?.message}
-            validateStatus={errors?.Nationality ? 'error' : ''}
+          <AntdTextField
+            name="cvv"
+            type="number"
+            label={t('cvv *')}
+            errorMsg={errors?.cvv?.message}
+            validateStatus={errors?.cvv ? 'error' : ''}
             control={control}
-            setValue={setValue}
-            options={[{ title: 'Egypt', value: '1' }]}
-            label={<p className="select-option-label">Nationality</p>}
-            formClassName="contact-form"
-          />
-        </div>
-        <div className="">
-          <AntdRadioGroup
-            radios={[
-              { title: 'male', value: '1' },
-              { title: 'female', value: '2' }
-            ]}
-            name="Gender"
-            defaultValue={watch('Gender')}
-            label={<p className="select-option-label">Gender*</p>}
-            validateStatus={errors?.Gender ? 'error' : ''}
-            errorMsg={errors?.Gender?.message}
-            control={control}
-            isRadioButton
           />
         </div>
       </div>
       <div className="btns">
-        <button className="close">close</button>
+        <button className="close" onClick={() => setform(1)}>
+          back
+        </button>
         <Button className="next" htmlType="submit" type="primary" loading={isSubmitting}>
-          {t(`send_btn.title`)}
+          {t(`Donate`)}
         </Button>
       </div>
     </Form>
   );
 };
 
-export default UserForm;
+export default Payment;

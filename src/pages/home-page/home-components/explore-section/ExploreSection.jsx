@@ -19,9 +19,12 @@ import person3 from '../../../../assets/imgs/explore-section/person3.png';
 import './ExploreSection.scss';
 import ProgressBar from '@ramonak/react-progress-bar';
 import { CircularProgressbar } from 'react-circular-progressbar';
+import { useNavigate } from 'react-router-dom';
+import routerLinks from '../../../../components/app/routerLinks';
 
 const ExploreSection = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className={`explore-section ${i18n.dir()}`}>
@@ -83,7 +86,7 @@ const ExploreSection = () => {
                   <h3>6 months</h3>
                 </div>
                 <div className="">
-                  <a href="http://" className="donate-btn">
+                  <a onClick={() => navigate(routerLinks.donationPage)} className="donate-btn">
                     Donate
                   </a>
                 </div>
@@ -140,7 +143,7 @@ const ExploreSection = () => {
                   <h3>6 months</h3>
                 </div>
                 <div className="">
-                  <a href="http://" className="donate-btn">
+                  <a onClick={() => navigate(routerLinks.donationPage)} className="donate-btn">
                     Donate
                   </a>
                 </div>
@@ -198,7 +201,7 @@ const ExploreSection = () => {
                   <h3>6 months</h3>
                 </div>
                 <div className="">
-                  <a href="http://" className="donate-btn">
+                  <a onClick={() => navigate(routerLinks.donationPage)} className="donate-btn">
                     Donate
                   </a>
                 </div>
