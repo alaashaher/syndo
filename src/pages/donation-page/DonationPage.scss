@@ -97,7 +97,7 @@
                 color: #fff;
 
                 &.active {
-                    color: $main_app_color;
+                    color: $main_app_color !important;
                 }
             }
 
@@ -109,10 +109,12 @@
             display: flex;
             gap: 50px;
             align-items: end;
+
             div {
                 font-size: 18px;
                 font-weight: 400;
             }
+
             .cash {
                 color: #fff !important;
                 font-size: 18px;
@@ -128,13 +130,15 @@
                     grid-gap: 54px;
                     gap: 68px;
 
-                    :where(.css-dev-only-do-not-override-j0nf2s).ant-input-lg {
+                    .ant-input {
                         border-radius: 0px;
                         border: 0px;
                         border-bottom: 1px solid $main-app-color;
+                        background-color: #fff0;
+
                     }
 
-                    :where(.css-dev-only-do-not-override-j0nf2s).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                    .ant-select-selector {
                         background-color: #fff0;
                         border: none;
                         border-radius: 0px;

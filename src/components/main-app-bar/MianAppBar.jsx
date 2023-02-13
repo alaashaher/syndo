@@ -6,7 +6,7 @@ import routerLinks from '../app/routerLinks';
 import MainAppBarLg from './MainAppBarLg';
 import MainAppBarMd from './MainAppBarMd';
 
-const MianAppBar = () => {
+const MianAppBar = ({ setthemes, themes }) => {
   // detect route
   const { pathname } = useLocation();
   const [isLight, setIsLight] = useState(false);
@@ -40,7 +40,11 @@ const MianAppBar = () => {
 
   return (
     <>
-      <MainAppBarLg className={`main-app-bar main-app-bar-lg ${isLight ? 'light' : 'dark'}`} />
+      <MainAppBarLg
+        className={`main-app-bar main-app-bar-lg ${isLight ? 'light' : 'dark'}`}
+        setthemes={setthemes}
+        themes={themes}
+      />
 
       <MainAppBarMd className={`main-app-bar main-app-bar-md ${isLight ? 'light' : 'dark'}`} />
     </>

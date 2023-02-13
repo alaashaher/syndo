@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
-  background-color: #000;
+  // background-color: #000;
   font-family: 'Roboto', sans-serif;
   @include custom-scrollbar;
 }
@@ -36,7 +36,7 @@ body {
   min-height: 100vh;
   height: 100%;
   // background-color: #f5f5f5;
-  background-color: #000;
+  // background-color: #000;
   // display: grid;
   grid-template-rows: auto 1fr;
 
@@ -75,4 +75,53 @@ body {
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid;
+}
+
+.dark-mood {
+  background-color: #000;
+}
+
+.light-mood {
+  background-color: #fff;
+
+  .main-app-bar {
+    background-color: #00acb18c;
+    margin-bottom: 20px;
+  }
+  .hero-text {
+    .h1-text, .p-text {
+      color: $main-app-color !important;
+    }
+  }
+  .doers-card {
+    .header {
+      .name {
+        color: $main-app-color;
+      }
+    }
+  }
+  .craete-title {
+    h1, p {
+      color: $main-app-color;
+    }
+  }
+  .main-app-footer {
+    background-color: #414040;
+    margin-top: 20px;
+  }
+  .donation-page .donation-form .user-form .contact-form .inputs .ant-form-item-label label, .ant-radio-wrapper span {
+    color: #000;
+  }
+  .donation-page .donation-form .user-form .btns .close {
+    color: #000;
+  }
+  .donation-page .donation-form .cashback .cash {
+    color: #000 !important;
+  }
+  .donation-page .success-page .desc, .donation-page .success-page .text {
+    color: #000;
+  }
+  .donation-page .donation-form .tabs .tab-div {
+    color: #000;
+  }
 }

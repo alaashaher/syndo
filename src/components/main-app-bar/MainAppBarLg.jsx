@@ -5,8 +5,9 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../common/logo/Logo';
 import mainAppBarLinks from './mainAppBarLinks';
 import './MainAppBarLg.scss';
-
-const MainAppBarLg = ({ className }) => {
+import { Switch } from 'antd';
+import mood from '../../assets/imgs/icons/mood.png';
+const MainAppBarLg = ({ className, setthemes, themes }) => {
   const { t } = useTranslation();
 
   const renderNavLinks = () => {
@@ -16,7 +17,7 @@ const MainAppBarLg = ({ className }) => {
           if (link !== null) {
             return (
               <li key={id}>
-                <NavLink activeClassName="active-link" to={link} exact>
+                <NavLink  to={link} >
                   {name}
                   <div className="active-img-wrap"></div>
                 </NavLink>
@@ -32,7 +33,7 @@ const MainAppBarLg = ({ className }) => {
                       {subitems.map((item) => {
                         return (
                           <li key={item.id}>
-                            <NavLink activeClassName="active-link" to={item.link} exact>
+                            <NavLink  to={item.link} >
                               {item.name}
                               <div className="active-img-wrap"></div>
                             </NavLink>
@@ -49,18 +50,38 @@ const MainAppBarLg = ({ className }) => {
       </ul>
     );
   };
+  const changeMood = (e) => {
+    // console.log('====================================');
+    // console.log(e);
+    // console.log('====================================');
+    setthemes((perv) => !perv);
+  };
   return (
-    <div className={className}>
-      <div className="custom-container">
-        <div className="nav-content-wrapper">
-          <Logo className="main-app-bar-logo" />
-          <div className="nav-lang-wrapper">
-            {renderNavLinks()}
-            <a className='sign-up-btn'>{t('main_app_bar_links.sign_up')}</a>
+    <>
+      <div style={{ backgroundColor: '#232326', padding: '10px 0px', textAlign: 'end' }}>
+        <div className="custom-container">
+          <Switch
+            checkedChildren={<img src={mood} />}
+            unCheckedChildren={<img src={mood} />}
+            defaultChecked={themes}
+            onChange={(e) => changeMood(e)}
+          />
+        </div>
+      </div>
+
+      <div className={className}>
+        <div className="custom-container">
+          <div className="mood"></div>
+          <div className="nav-content-wrapper">
+            <Logo className="main-app-bar-logo" />
+            <div className="nav-lang-wrapper">
+              {renderNavLinks()}
+              <a className="sign-up-btn">{t('main_app_bar_links.sign_up')}</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
