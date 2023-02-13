@@ -105,11 +105,11 @@ const Payment = ({ setform }) => {
           </div>
           <div className="form-field-wrapper">
             <AntdTextField
-              name="CardNumber"
-              type="number"
-              label={t('Card Number *')}
-              errorMsg={errors?.CardNumber?.message}
-              validateStatus={errors?.CardNumber ? 'error' : ''}
+              name="ExpireDate"
+              type="date"
+              label={t('Expire Date*')}
+              errorMsg={errors?.ExpireDate?.message}
+              validateStatus={errors?.ExpireDate ? 'error' : ''}
               control={control}
             />
           </div>
