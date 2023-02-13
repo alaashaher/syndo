@@ -143,6 +143,9 @@
                     color: #fff;
                     padding: 20px 50px;
                     border-radius: 6px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .card-footer {

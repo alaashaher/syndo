@@ -2,7 +2,9 @@
   display: none;
 }
 
-@import "~slick-carousel/slick/slick.css"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
 @import 'animate.css/animate.min.css';
@@ -26,7 +28,7 @@ body {
   padding: 0;
   overflow-x: hidden !important;
   background-color: #000;
-  // @include bodyFont-ar;
+  font-family: 'Roboto', sans-serif;
   @include custom-scrollbar;
 }
 
@@ -40,9 +42,9 @@ body {
 
 
 
-  &.app-rtl {
-    // direction: rtl;
-  }
+  // &.app-rtl {
+  //   // direction: rtl;
+  // }
 
   margin: 0;
   padding: 0 !important;
@@ -61,4 +63,16 @@ body {
 :where(.css-dev-only-do-not-override-j0nf2s).ant-input {
   background-color: #0000;
   color: $main-app-color;
+}
+
+.ant-radio-wrapper {
+  span {
+    color: #fff;
+  }
+}
+
+.ant-select-selector {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid;
 }

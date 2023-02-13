@@ -19,6 +19,7 @@
     "animate.css": "^4.1.1",
     "antd": "^5.2.0",
     "aos": "^2.3.4",
+    "firebase-tools": "^11.22.0",
     "flag-icon-css": "^3.5.0",
     "formik": "^2.2.9",
     "formik-material-ui": "^4.0.0-alpha.2",

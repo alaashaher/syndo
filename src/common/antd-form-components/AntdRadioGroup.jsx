@@ -29,17 +29,11 @@ const AntdRadioGroup = ({
         // defaultValue={defaultValue}
       >
         {radios?.length &&
-          radios.map((radio, index) =>
-            isRadioButton ? (
-              <Radio.Button key={index} value={radio.value}>
-                {radio.title}
-              </Radio.Button>
-            ) : (
-              <Radio key={index} value={radio.value}>
-                {radio.title}
-              </Radio>
-            )
-          )}
+          radios.map((radio, index) => (
+            <Radio key={index} value={radio.value}>
+              {radio.title}
+            </Radio>
+          ))}
       </Radio.Group>
     </Form.Item>
   );
